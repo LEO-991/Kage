@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="pic10.css">
+    <title>More</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <img src="web-Logo (2).png" class="logo" width="80" height="80">
+        <input type="checkbox" id="toggler">
+        <label for="toggler"> <i class="ri-align-justify"></i> </label>
+        <div class="menu">
+          <ul class="list">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="body.html">Destination</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+
+  
+      <section id="body">
+    <div class="wrapper">
+        <img src="edit/cathedral.png" class="pic">
+        <div class="text-box">
+            <h2> Manila City</h2>
+            <h2>Manila Cathedral</h2>
+            <p>
+                The Manila Cathedral also known as the Minor Basilica and Metropolitan Cathedral of the Immaculate Conception is a majestic landmark nestled within the historic heart of Manila.
+                         Its grand façade and adorned with intricate details and towering spires that stands as a testament to centuries of faith and resilience. 
+                         Stepping inside, visitors are greeted by a sanctuary of tranquility and reverence where soaring arches and stained glass windows bathe the interior in ethereal light.
+                          As one of the oldest churches in the Philippines, the Manila Cathedral holds a special place in the nation's religious and cultural heritage that serving as a sacred space for worship, reflection, and celebration.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="comment-section">
+   
+    <div class="add-comment">
+      <h3>Add a Comment</h3>
+      <form id="comment-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <h2>Comments</h2>
+    <div class="comments">
+      <div class="comment">
+        <div class="avatar">
+          <img src="edit/person.jpg"  width="50" height="50" >
+        </div>
+        <div class="comment-content">
+          <h3>mendy875</h3>
+          <p> an architectural masterpiece! Its intricate design and rich history make it a must-visit landmark in Manila.</p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">
+          <img src="edit/person.jpg"  width="50" height="50" >
+        </div>
+        <div class="comment-content">
+          <h3>lok54</h3>
+          <p>Stepping inside, you can feel the weight of history and the beauty of devotion.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+    
+
+<div class="nav">
+    <botton class="previous-page" onclick="previousPage()">
+        &#10094; </botton>
+    <botton class="next-page" onclick="nextPage()">
+        &#10095;</button>
+</div>
+
+
+<footer>
+<p>&copy; 2024 Explore Amazing Places.</p>
+</footer>
+</div >
+
+</body>
+
+
+<script>
+    function previousPage() {
+        window.location.href = "pic9.html"; 
+        
+    }
+     function nextPage() {
+        window.location.href = "pic1.html"; 
+        
+    }
+    
+</script>
+<style>
+
+
+</style>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <title>Thank You Page</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="web-Logo (2).png" class="logo" width="80" height="80">
+    <input type="checkbox" id="toggler">
+    <label for="toggler"> <i class="ri-align-justify"></i> </label>
+    <div class="menu">
+      <ul class="list">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="body.html">Destination</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Thank you for getting in touch with us</h1>
+    <p>We've received your message and are grateful for the opportunity to assist you.
+       Rest assured, our team is actively reviewing your inquiry.
+        We'll get back to you as soon as possible with the information you need.
+         Thank you for your patience.</p>
+  </div>
+</body>
+<style>
+    * {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(rgba(255,255,255,0.8),
+   rgba(255,255,255,0.8)), url('edit/kayangan.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header{
+margin: 10px 20px;
+}
+.navbar{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: space-between;
+
+  padding: 15px;
+
+}
+.navbar a{
+  text-decoration: none;
+  font-weight: 800;
+  color: inherit;
+}
+.navbar a:hover{
+  color: rgb(255, 0, 0);
+}
+.logo{
+  margin-right: 50px;
+}
+.list{
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+#toggler,.navbar label{
+  display: none;
+  font-size: 25px;
+}
+@media screen and (max-width:600px){
+  .menu{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .list{
+    font-weight: bold;
+  text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toggler:checked~ .menu{
+    max-height: 100%;
+  }
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-top: 10px;
+}
+
+</style>
+</html>

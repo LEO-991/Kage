@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <img src="web-Logo (2).png" class="logo" width="80" height="80">
+        <input type="checkbox" id="toggler">
+        <label for="toggler"> <i class="ri-align-justify"></i> </label>
+        <div class="menu">
+          <ul class="list">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="body.html">Destination</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="myForm" action="thanks.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" onclick="submitForm(event)">Submit</button>
+        </form>
+    </section>
+   
+
+    <footer>
+        <p>&copy; 2024 Explore Amazing Places.</p>
+    </footer>
+</body>
+<script>
+    function submitForm(event) {
+        event.preventDefault(); 
+        document.getElementById('myForm').submit(); 
+        
+       
+        window.location.href = 'thanks.html';
+    }
+</script>
+</html>

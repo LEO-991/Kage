@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="pic2.css">
+    <title>More</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <img src="web-Logo (2).png" class="logo" width="80" height="80">
+        <input type="checkbox" id="toggler">
+        <label for="toggler"> <i class="ri-align-justify"></i> </label>
+        <div class="menu">
+          <ul class="list">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="body.html">Destination</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+    
+   
+
+    <section id="body">
+        <div class="wrapper">
+            <img src="edit/boracay.png" class="pic">
+            <div class="text-box">
+                <h2>Capiz</h2>
+                <h2>Boracay</h2>
+                <p>
+                Boracay Island are known as one of the world's most beautiful tropical destinations and offers a mesmerizing blend of pristine beaches, azure waters, and vibrant nightlife. 
+                 With its powdery white sands and crystal-clear waters and Boracay beckons travelers to unwind in paradise. 
+                 Whether you're seeking thrilling water sports like windsurfing and kiteboarding or simply yearning for tranquil moments by the shore, Boracay caters to every whim.
+                  As the sun dips below the horizon, Boracay transforms into a lively hub of entertainment, with beachfront bars and restaurants pulsating with music and laughter.
+                   With its irresistible charm and endless array of activities on Boracay promises an unforgettable escape for every traveler.
+                </p>
+            </div>
+    
+        </div>
+    </section>
+    
+    <section class="comment-section">
+       
+        <div class="add-comment">
+          <h3>Add a Comment</h3>
+          <form id="comment-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea id="comment" name="comment" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    
+        <h2>Comments</h2>
+        <div class="comments">
+          <div class="comment">
+            <div class="avatar">
+              <img src="edit/person.jpg"  width="50" height="50" >
+            </div>
+            <div class="comment-content">
+              <h3>mayra</h3>
+              <p>Boracay is paradise on Earth! 
+                The pristine white sand beaches and crystal-clear waters make
+                 it a dream destination for beach lovers like me. Can't wait to go back!</p>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar">
+              <img src="edit/person.jpg"  width="50" height="50" >
+            </div>
+            <div class="comment-content">
+              <h3>Leo20</h3>
+              <p>Spent a week in Boracay and it was pure bliss! The vibrant nightlife,
+                 water sports, and breathtaking sunsets... it's the ultimate tropical getaway.</p>
+            </div>
+          </div>
+          <!-- Add more comments here -->
+        </div>
+      </section>
+
+
+   
+
+<div class="nav">
+    <botton class="previous-page" onclick="previousPage()">
+        &#10094; </botton>
+    <botton class="next-page" onclick="nextPage()">
+        &#10095;</button>
+</div>
+
+
+<footer>
+<p>&copy; 2024 Explore Amazing Places.</p>
+</footer>
+
+</body>
+
+<script>
+    function previousPage() {
+        window.location.href = "pic1.html"; 
+        
+    }
+     function nextPage() {
+        window.location.href = "pic3.html"; 
+        
+    }
+    
+</script>
+<style>
+
+
+</style>
+</html>
