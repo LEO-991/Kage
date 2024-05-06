@@ -1,0 +1,272 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-weight: normal;
+   font-family: sans-serif;
+   text-decoration: none;
+}
+
+
+body {
+ background-image: linear-gradient(rgba(255,255,255,0.8),
+  rgba(255,255,255,0.8)), url('edit/cathedral.png');
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+header{
+margin: 10px 20px;
+}
+.navbar{
+ display:flex;
+ flex-wrap:wrap;
+ align-items:center;
+ justify-content: space-between;
+ padding: 15px;
+
+}
+.navbar a{
+ text-decoration: none;
+ font-weight: 800;
+ color: inherit;
+}
+.navbar a:hover{
+  color: rgb(255, 0, 0);
+}
+.logo{
+ margin-right: 50px;
+}
+.list{
+ text-transform: uppercase;
+ list-style: none;
+ display: flex;
+ gap: 30px;
+}
+#toggler,.navbar label{
+ display: none;
+ font-size: 25px;
+}
+@media screen and (max-width:600px){
+ .menu{
+   width: 100%;
+   max-height: 0;
+   overflow: hidden;
+ }
+ .list{
+   font-weight: bold;
+ text-transform: uppercase;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+ }
+ .navbar label{
+   display: inline-flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ #toggler:checked~ .menu{
+   max-height: 100%;
+ }
+}
+
+#body{
+ display: flex;
+ justify-content: center;
+ min-height: 100vh;
+
+}
+
+.wrapper{
+ margin: 150px;
+ width: 70%;
+
+}
+
+ .pic{
+ max-width: 400px;
+ float: right;
+ border: 3px solid #fff;
+ border-radius: 10px;
+ margin-left: 50px;
+ margin-bottom: 20PX;
+ 
+}
+
+.text-box{
+ color: #000000;
+}
+
+.text-box h2{
+  text-align: center;
+ margin-bottom: 10px;
+ font-size: 30px;
+}
+.text-box p{
+  text-indent: 50px;
+text-align: justify;
+ font-size: 17px;
+ transition: transform 0.1s ease-in-out;
+}
+.text-box p:hover{
+   transform: scale(1.1);
+
+}
+
+
+@media screen and (max-width:600px){
+ .pic{
+   max-width: 350px;
+ border: 3px solid #fff;
+ border-radius: 10px;
+ margin: 0 -30px;
+ margin-bottom: 20PX;
+ }
+ .text-box h2{
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 30px;
+  }
+}
+
+
+
+
+
+.comment-section {
+ margin: 100px auto;
+ max-width: 600px;
+ padding: 20px;
+ background-color: #f9f9f9;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-comment {
+ margin-bottom: 20px;
+}
+
+.add-comment h3 {
+ margin-bottom: 10px;
+}
+
+.add-comment form {
+ display: flex;
+ flex-direction: column;
+}
+
+.add-comment form .form-group {
+ margin-bottom: 10px;
+}
+
+.add-comment form label {
+ font-weight: bold;
+}
+
+.add-comment form input[type="text"],
+.add-comment form textarea {
+ padding: 8px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ width: 100%; 
+ box-sizing: border-box; 
+}
+
+.add-comment form button {
+ padding: 8px 15px;
+ background-color: #007bff;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.add-comment form button:hover {
+ background-color: #0056b3;
+}
+
+.comments {
+ margin-top: 20px;
+}
+
+.comment {
+ display: flex;
+ margin-bottom: 20px;
+}
+
+.avatar img {
+ border-radius: 100%;
+}
+
+
+.comment-content {
+ margin-left: 10px;
+}
+
+.comment-content h3 {
+ margin: 0;
+}
+
+.comment-content p {
+ margin: 5px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+ .add-comment form input[type="text"],
+ .add-comment form textarea {
+   width: calc(100% - 16px); 
+ }
+ .comment-section {
+   max-width: 300px;
+ }
+}
+
+
+
+footer {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  position: absolute;
+  bottom: auto;
+  width: 100%
+}
+.nav{
+  text-align: center;
+  margin-top: 450px;
+
+}
+.previous-page,
+.next-page  {
+  position: absolute;
+   top: 60%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   cursor: pointer;
+   font-size: 40px;
+   padding: 5px 2px;
+   z-index: 3;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.previous-page:hover,
+.next-page:hover {
+  background-color: #0d0d0d3d;
+  justify-content: space-between;
+}
+.previous-page{
+  left: 20px;
+}
+
+.next-page {
+  right: 20px;
+}
